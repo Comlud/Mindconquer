@@ -1,0 +1,54 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    background-color: black;
+    color: white;
+}
+
+#title
+{
+    font-weight: normal;
+    font-size: 3em;
+    margin-top: 1em;
+}
+
+#game-div
+{
+    position: relative;
+    width: 640px;
+    height: 640px;
+    background-color: black;
+}
+
+.tile-div
+{
+    position: absolute;
+    width: 64px;
+    height: 64px;
+}
+
+.rised
+{
+    transition: .25s;
+    transform: translate(-10px, -10px);
+    box-shadow:
+        1px 1px,
+        2px 2px,
+        3px 3px,
+        4px 4px,
+        5px 5px,
+        6px 6px,
+        7px 7px,
+        8px 8px,
+        9px 9px,
+        10px 10px;
+}
+
+.rised:hover
+{
+    transform: none;
+    box-shadow: none;
+    filter: brightness(75%);
+}
